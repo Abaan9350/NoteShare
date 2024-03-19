@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Sign-in Example</title>
+    <script src="https://alcdn.msauth.net/browser/2.15.0/js/msal-browser.min.js"></script>
+    <style>
+        /* Your styles remain unchanged */
+    </style>
+    <script>
+        const msalConfig = {
+            auth: {
+                clientId: '7b3dbb0d-c878-4991-8235-4839a552b3d2',
+                redirectUri: 'https://abaan9350.github.io/NoteShare/'
+            }
+        };
+
+        const msalInstance = new msal.PublicClientApplication(msalConfig);
+
+        async function signIn() {
+            const loginRequest = {
+                scopes: ['openid', 'profile', 'User.Read']
+            };
+
+            try {
+                await msalInstance.loginRedirect(loginRequest);
+                // The page will be redirected to Microsoft sign-in, opening in a new tab
+            } catch (error) {
+                console.error('Login failed:', error);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to NoteShare.</h1>
+        <button onclick="signIn()">
+            <img src="Microsoft_logo.svg.png" alt="Microsoft Logo" class="logo">
+            Sign in with Microsoft
+        </button>
+    </div>
+</body>
+</html>
