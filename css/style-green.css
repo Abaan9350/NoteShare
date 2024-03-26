@@ -478,32 +478,32 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: lightgray;
+  background-color: gray;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #24b67e;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #24b67e;
+  background-color: white;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #24b67e;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #24b67e;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #24b67e;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -535,13 +535,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #24b67e;
+  background-color: white;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #24b67e;
+  background-color: white;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -615,7 +615,7 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0px;
@@ -1272,4 +1272,20 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+}
+
+#home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: changeBackground;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeBackground {
+  0% { background-image: url(../img/bg.jpg); }
+  33.33% { background-image: url(../img/bg\ \(2\).jpg); } /* Replace with your second image */
+  100% { background-image: url(../img/counters-bg.jpg); } /* Replace with your third image */
+  100% { background-image: url(../img/bg.jpg); } /* Loop back to the first image */
 }
