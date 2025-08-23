@@ -1,6 +1,6 @@
 # NoteShare - A Note Sharing Platform
 
-**NoteShare** is a collaborative platform designed specifically for students of SIES Graduate School of Technology. It aims to facilitate the exchange and sharing of academic notes, providing an invaluable resource for students to enhance their learning experience.
+**NoteShare** is a collaborative platform designed specifically for students of SIES Graduate School of Technology (Nerul). It aims to facilitate the exchange and sharing of academic notes, providing an invaluable resource for students to enhance their learning experience.
 
 ## Features
 
